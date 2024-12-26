@@ -1,0 +1,209 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>PIZZA</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="CSS/bootstrap.css">
+<link rel="stylesheet" href="CSS/MAIN-STYLE.css">
+<link rel="shortcut icon" href="IMAGES/logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="CSS/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<!--box search-->
+	<div class="modal" id="box-search">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="text-primary">Search</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+			<div class="modal-body">
+				<form class="input-group">
+					<input type="text" class="form-control" name="tim" placeholder="tìm kiếm">
+					<button type="button" class="btn btn-secondary">
+						<i class="material-symbols-outlined">search</i>
+					</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--box shopping-->
+	<div class="modal" id="box-shopping">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="text-primary">Shopping Cart</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+			<div class="modal-body">
+				<form class="input-group">
+					<input type="text" class="form-control" name="tim" placeholder="tìm kiếm">
+					<button type="button" class="btn btn-secondary">
+						<i class="material-symbols-outlined">search</i>
+					</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="IMAGES/logo.png"></a>
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"> <a href="index.html" class="nav-link active">Home</a> </li>
+					<li class="nav-item dropdown"> 
+						<a href="menu.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+							<div class="dropdown-menu">
+								<a href="bagel.html" class="dropdown-item">Bagel Pizza</a>
+								<a href="breakfast.html" class="dropdown-item">Breakfast Pizza</a>
+								<a href="BBQ.html" class="dropdown-item">BBQ Chicken Pizza</a>
+								<a href="dessert.html" class="dropdown-item">Dessert Pizza</a>
+								<a href="pan.html" class="dropdown-item">Pan Pizza</a>
+								<a href="square.html" class="dropdown-item">Square Pizza</a>
+							</div>
+					</li>
+					<li class="nav-item"> <a href="blog.html" class="nav-link">Blog</a> </li>
+					<li class="nav-item"> <a href="contact.html" class="nav-link">Contact</a> </li>
+				</ul>
+				
+				<div class="navbar-text">
+					<button type="button" data-bs-target="#box-shopping" data-bs-toggle="modal" class="btn-0">
+						<span class="material-symbols-outlined me-2">shopping_cart</span>
+					</button>
+				</div>
+				
+				<div class="navbar-text">
+					<button type="button" data-bs-target="#box-search" data-bs-toggle="modal" class="btn-0">
+						<span class="material-symbols-outlined data-bs-toggle">search</span>
+					</button>
+				</div>
+				
+			</div>
+			
+		</div>
+	</nav>
+	</header>
+<!-- InstanceBeginRepeat name="lap" --><!-- InstanceBeginRepeatEntry -->
+    <div class="title-page"> <!-- InstanceBeginEditable name="ten-trang" -->
+      <div class="text-center">
+        <h2 class="tieudetrang">Blog</h2>
+        <p>Blog / Trang hiện hành</p>
+      </div>
+    <!-- InstanceEndEditable --></div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> <!-- InstanceBeginEditable name="main" -->
+	<main>
+		<div class="py-5">
+			<div class="container">
+				<div class="col-lg-6 mx-auto text-center">
+						<h1>BLOG</h1>
+				</div>
+			</div>
+			
+			<section id="blog" class="py-5">
+				<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card text-center border-0">
+							<div class="position-relative box-hover">
+								<div class="hoverimage_blog">
+									<img src="IMAGES/pic_blog.jpg" class="w-100">
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<h3 class="py-5">What is a New York Slice? Scott’s Pizza Tours Explains</h3>
+						<p>If you want to know what a New York Slice is, you need to ask a pizza lover who eats pizza for a living. For me, the primary pizza expert is Scott Wiener of Scott’s Pizza Tour.</p>
+						<div class="d-flex justify-content-center">
+							<button type="button" class="btn btn-primary"><a href="https://pizzatherapy.com/what-is-a-new-york-slice-scotts-pizza-tours-explains/#:~:text=For%20me%2C%20the%20primary%20pizza%20expert%20is%20Scott,lightly%20seasoned%20%28if%20seasoned%20at%20all%29%20tomato%20sauce." target="_blank" style="color: #fff">View Details</a></button>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+						<div class="card text-center border-0">
+							<div class="position-relative box-hover">
+								<div class="hoverimage1">
+									<img src="IMAGES/blog1.jpg" class="w-100 py-3">
+								</div>
+							</div>
+						</div>
+						
+						<p class="py-3"><a href="https://www.scottspizzatours.com/pizzerias/" target="_blank">Tour stops are always changing but these are our favorite pizzerias right now, all mapped out and organized for your convenience!</a></p>
+						<div class="hoverimage1">
+							<img src="IMAGES/blog2.jpg" class="w-100">
+						</div>
+						
+						<p class="py-3"><a href="https://www.scottspizzatours.com/blog/" target="_blank">A pizza blog featuring news, links, and information from NYC's premier pizza nerd team! Posts by Scott of Scott's Pizza Tours.</a></p>
+						
+					</div>
+					
+				</div>
+			</div>
+			</section>
+			
+		</div>
+	</main>
+	<!-- InstanceEndEditable -->
+<footer class="bg-dark py-4 text-light">
+	<div class="container">
+			<div class="row justify-content-between text-center text-lg-start">
+				<div class="col-lg-4">
+					<img src="IMAGES/footer.png" class="w-100">
+				</div>
+				
+				<div class="col-lg-8">
+					<img src="IMAGES/map.png" class="w-100">
+					<div class="row">
+						<div class="col-lg-4">
+							<h5 class="mt-3 mb-4">About us</h5>
+							<p>6 Ward, Tân An City, Long An Province</p>
+						</div>
+						<div class="col-lg-4">
+							<h5 class="mt-3 mb-4">Phone</h5>
+							<p>0123 456 789</p>
+						</div>
+					
+						<div class="col-lg-4">
+						<h5 class="mt-3 mb-3">Contact</h5>
+						<p class="icon-ss">
+							<a href="#" class="a-fb"><i class="fab fa-facebook-f fa-lg"></i></a>
+							<a href="#" class="a-tw"><i class="fab fa-twitter fa-lg"></i></a>
+							<a href="#" class="a-google"><i class="fab fa-google fa-lg"></i></a>
+						</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br>
+		<div class="border-top border-light py-3  text-center">
+		Copyright &copy; 2020 Pizza Store.  
+		</div>
+	</footer>
+	<script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+<!-- InstanceEnd --></html>

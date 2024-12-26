@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+a {
+	text-decoration: none
+}
+.mega-menu
+{
+	width: 500%;
+	margin-left: -200%;
+	
+}
+
+/*--- banner ---*/
+#banner .carousel-caption
+{
+	position: absolute; top: 25%; background: rgba(0,0,0,0.5); width: 30%; height: 40%
+}
+#banner .carousel-caption a {color: #fff}
+
+/*------------*/
+#menu .nav-link{ padding: 5px 20px }
+#menu .nav-link:hover { background: #EB4734; color: #fff; border-radius: 5px}
+
+#menu .dropdown-header{ font-size: 24px; text-align: center; text-transform: uppercase}
+
+#menu .dropdown-item{ text-align: center; position: relative; padding: 10px;}
+#menu .dropdown-item:after{ content: ""; position: absolute; width: 40%; height: 2px ; background: #EB4734; left: 30%; top: 85%; }
+#menu .navbar-text:hover{ background: #EB4734; border-radius: 5px; cursor: pointer}
+
+/*--thiet bi tu 900px tro xuong thi mega-menu chi rong 100% thoi--*/
+@media (max-width:900px)
+{
+		.mega-menu
+	{
+		width: 100%;
+		margin-left: 0
+	}
+}
+
+/*---- icon khi hover ----*/
+.icon-ss a
+{
+	width: 40px; height: 40px; line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #1B7BEB;
+	display: inline-block
+}
+.icon-ss a.a-tw{background: #1BD2EB}
+.icon-ss a.a-google{background: #E82929}
+
+.icon-ss a:hover,
+.icon-ss a.a-tw:hover,
+.icon-ss a.a-google:hover
+{
+	background: #8FA83B
+}
+.hover-content button a {color: #000000}
+.card-body button a {color: #fff}
+/*----------*/
+.title-page
+{
+	background: url("../IMAGES/background.png") no-repeat center;
+	min-height: 320px;
+	display: flex; justify-content: center; align-items: center; color: #fff
+}
+
+/*----tab content---*/
+#tab .nav-link
+{
+	color: #5EB8C0; background: url("../IMAGES/tab1.png"); width: 180px; height: 180px;
+	display: flex; justify-content: center; align-items: center; font-weight: bold
+}
+#tab .nav-link.pink
+{
+	background: url( "../IMAGES/tab2.png"); color: #FF91AF
+}
+
+/*--- set up hover ---*/
+.box-hover, .box-hover img, .box-hover .card-img-overlay{border-radius: 30px}
+
+.box-hover .card-img-overlay
+{
+	opacity: 0; transform: scale(0);
+	transition: all .5s;
+	background: rgba(255,255,255,0.6);
+	display: flex; justify-content: center; align-items: center; flex-direction: column
+}
+.box-hover:hover > .card-img-overlay
+{
+	opacity: 1; transform: scale(1)
+}
+
+/*---set up giá ---*/
+.circle {
+	/*padding: 15px 32px;*/
+	position: relative;
+	margin: 4px 40px;
+	height: 40px;
+	width: 40px;
+	background-color: #B8FFFF;
+	text-align: center;
+	font-size: 10px;
+	color: #000000;
+	border-radius: 50%;
+}
+.btn-0{border: none; background: none}
+
+/*-- blog ---*/
+#blog img {border-radius: 30px}
+
+/*-- contact ---*/
+#contact img {border-radius: 30px}
+
+.text-contact
+{
+	margin: 1%;
+	position: relative;
+}
+.contact-txt
+{
+	position: absolute;
+    top: -350px;
+	left: 90px;
+	
+    
+}
+.text-contact1
+{
+	margin: 1%;
+	position: relative;
+}
+.contact1-txt
+{
+	position: absolute;
+    top: -220px;
+	left: 110px;
+}
+.text-contact2
+{
+	margin: 1%;
+	position: relative;
+}
+.contact2-txt
+{
+	position: absolute;
+    top: -90px;
+	left: 120px;
+}
+/*-- mail --*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #EB4734;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FF91AF;
+}
+
+.send-mail {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.info
+{
+	position: relative;
+	height: 300px;
+	margin: 120px 200px;
+}
+
+.plus {
+  display:inline-block;
+  width:50px;
+  height:50px;
+  
+  background:
+    linear-gradient(#fff 0 0),
+    linear-gradient(#fff 0 0),
+    #000;
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+.cart i {font-size: 24px}
+.payment i { padding: 5px}
+
+/*---phóng to ảnh khi hover mục menu----*/
+.hoverimage img{
+/*-webkit-transform:scale(0.8);*/ /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+/*-moz-transform:scale(0.8);*/ /*Thu nhỏ đối với Mozilla*/
+/*-o-transform:scale(0.8);*/ /*Thu nhỏ đối với Opera*/
+-webkit-transition-duration: 0.3s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+-moz-transition-duration: 0.5s; /*Như trên*/
+-o-transition-duration: 0.5s; /*Như trên*/
+/*opacity: 0.7;*/ /*Độ mờ của hình ảnh*/
+margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.hoverimage img:hover{
+-webkit-transform:scale(1.2); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+-moz-transform:scale(1.2);
+-o-transform:scale(1.2);
+box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+-webkit-box-shadow:0px 0px 30px gray;
+-moz-box-shadow:0px 0px 30px gray;
+opacity: 1; /*Độ mờ của hình ảnh*/
+}
+
+/*---phóng to ảnh khi hover từng sp trong menu----*/
+.hoverimage1 img{
+/*-webkit-transform:scale(0.8);*/ /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+/*-moz-transform:scale(0.8);*/ /*Thu nhỏ đối với Mozilla*/
+/*-o-transform:scale(0.8);*/ /*Thu nhỏ đối với Opera*/
+-webkit-transition-duration: 0.3s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+-moz-transition-duration: 0.5s; /*Như trên*/
+-o-transition-duration: 0.5s; /*Như trên*/
+/*opacity: 0.7;*/ /*Độ mờ của hình ảnh*/
+margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.hoverimage1 img:hover{
+-webkit-transform:scale(1.1); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+-moz-transform:scale(1.1);
+-o-transform:scale(1.1);
+box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+-webkit-box-shadow:0px 0px 30px gray;
+-moz-box-shadow:0px 0px 30px gray;
+opacity: 1; /*Độ mờ của hình ảnh*/
+}
+
+/*----------*/
+.hoverimage_blog img{
+/*-webkit-transform:scale(0.8);*/ /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+/*-moz-transform:scale(0.8);*/ /*Thu nhỏ đối với Mozilla*/
+/*-o-transform:scale(0.8);*/ /*Thu nhỏ đối với Opera*/
+-webkit-transition-duration: 0.3s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+-moz-transition-duration: 0.5s; /*Như trên*/
+-o-transition-duration: 0.5s; /*Như trên*/
+/*opacity: 0.7;*/ /*Độ mờ của hình ảnh*/
+margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.hoverimage_blog img:hover{
+-webkit-transform:scale(1.0); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+-moz-transform:scale(1.0);
+-o-transform:scale(1.1);
+box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+-webkit-box-shadow:0px 0px 30px gray;
+-moz-box-shadow:0px 0px 30px gray;
+opacity: 1; /*Độ mờ của hình ảnh*/
+}
+
+.vung_blue
+{
+	position: relative;
+	top: 145px;
+	width: 350px;
+	height: 330px;
+	
+	
+}
+.vung_green
+{
+	position: relative;
+	top: 55px;
+	height: 500px;
+}
